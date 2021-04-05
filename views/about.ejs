@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/styles_about.css">
+	<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@200&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Patrick+Hand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+	<title>Fire Alarm System | <%=title%> </title>
+</head>
+<body>
+
+	<div class="container" id="blur">
+
+		<nav>
+			<div class="logo common">
+				<a href="/"><b>F<span class="color-change">@</span>s</b></a>
+			</div>
+
+			<div class="se common">
+					<ul class="first">
+						<li class="you" id="open-popup-btn"><a href="#">Log-in</a></li>
+						<li class="bracket">/</li> 
+						<li id="open-popup-btn1"><a href="#">Sign-up</a></li>
+					</ul>
+				</div>
+		</nav>
+
+			<div class="home">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li>></li>
+					<li><a href="/about">ABOUT</a></li>
+				</ul>
+			</div>
+
+		<div class="txt">
+			<div class="before">
+				<h1>About FAS</h1>
+				<p>Welcome to official website of FAS hosted by Indian Institute of Information Technology, Allahabad under the Centeral Government of India. This website is for alerting people about the critical situations i.e. sudden increase in the temperature of a particular area: FIRE via mentoring the metrics from the detectors and regulating the function of the Alarms.The system involves inputs of various sensor devices like heat sensor, smoke detector and carbon monoxide detector. The CC3 building is equipped with all these sensors at various places and so does every other building in the Campus.
+				Our system receives the input from these sensors and draws the verdict to generate fire alarm or not.
+				The system can localize the area that initiated the alarm. log report will be maintained to analyse the situation later which is also visible to all the user of this website as well.
+				This report consist of details like sensed values, timestamp of alarm, the device which triggered the alarm, etc. 
+				For any further information contact our <a href="/contact">Members of Administration</a>, they will gladly entertain your queries.</p>
+			</div>
+		</div>
+	
+	<!--
+		<div class="container2">
+			<div class="collage">
+				<a href="#" class="image"><img src="1.jpg" height=200px width=200px ></a>
+				<a href="#" class="image"><img src="2.jpg"></a>
+				<a href="#" class="image"><img src="3.jpg"></a>
+				<a href="#" class="image"><img src="4.jfif"></a>
+				<a href="#" class="image"><img src="5.webp"></a>
+			</div>
+		</div>
+	-->
+	</div>
+
+	<!------------------------------------------------- Login ------------------------------------------------------->
+
+	<div id="popup" class="popup">
+
+		<button id="dismiss-popup-btn" type="button" class="close" aria-label="Close">
+ 	 		<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="log child">
+			<a href="#"><b>F<span class="color-change">@</span>s</b></a>
+		</div>
+		<form>
+			<input class="child" type="text" name="email" placeholder="Email">
+			<input class="child" type="password" name="password" placeholder="Password">
+			<a class="left child" href="#">Forget Password ?</a>
+			<input class="child" type="submit" name="submit" value="Log In">
+			<p class="link child">Don't have a login ? <a href="#" id="open-popup-btn-2" >Register now</a>.</p>
+			<p>Use of this constitutes acceptance of our User Agreement and Privacy Policy</p>
+		</form>
+
+	</div>
+
+	<!------------------------------------------------ sign up --------------------------------------------------------->
+
+	<div id="popup1" class="popup1">
+
+		<button id="dismiss-popup-btn1" type="button" class="close" aria-label="Close">
+ 	 		<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="log child">
+			<a href="#"><b>F<span class="color-change">@</span>s</b></a>
+		</div>
+		<form>
+			<input type="text" name="email" placeholder="Email">
+			<input type="password" name="password" placeholder="Password">
+			<input type="password" name="confirm password" placeholder="Confirm Password">
+			<input type="username" name="username" placeholder="Username">
+			<p class="clock">By registering, you agree to our <a href="#">User Agreement</a> & <a href="#">privacy policy</a></p>
+			<br>
+			<input type="submit" name="submit" value="Register">
+			<p class="link">Already registered ? <a href="#" id="open-popup-btn1-2" > Log In now</a>.</p>
+		</form>
+	</div>
+
+	<script src="/script.js"></script>
+
+</body>
+</html>
